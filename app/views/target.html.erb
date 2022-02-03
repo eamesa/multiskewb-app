@@ -19,16 +19,54 @@
 <div>&emsp;</div>
 <%= "#{@gregs_target[3]} #{@gregs_target[3]}..............#{@gregs_target[2]} #{@gregs_target[2]}" %>
 
+<div>&emsp;</div>
 <label for="back">What is the piece in the back?</label>
 <select id="back" name="back" form="state">
-  <option value="joker">🔳joker</option>
-  <option value="red">🟥Red</option>
-  <option value="blue">🟦Blue</option>
-  <option value="orange">🟧Orange</option>
-  <option value="green">🟩Green</option>
+  <option value="🔳">🔳joker</option>
+  <option value="🟥">🟥Red</option>
+  <option value="🟦">🟦Blue</option>
+  <option value="🟧">🟧Orange</option>
+  <option value="🟩">🟩Green</option>
 </select>
+<div>&emsp;</div>
+<label for="top_right">What is the piece in the top right?</label>
+<select id="top_right" name="top_right" form="state">
+  <option value="🔳">🔳joker</option>
+  <option value="🟥">🟥Red</option>
+  <option value="🟦">🟦Blue</option>
+  <option value="🟧">🟧Orange</option>
+  <option value="🟩">🟩Green</option>
+</select>
+<div>&emsp;</div>
+<label for="bottom_right">What is the piece in the bottom right?</label>
+<select id="bottom_right" name="bottom_right" form="state">
+  <option value="🔳">🔳joker</option>
+  <option value="🟥">🟥Red</option>
+  <option value="🟦">🟦Blue</option>
+  <option value="🟧">🟧Orange</option>
+  <option value="🟩">🟩Green</option>
+</select>
+<div>&emsp;</div>
+<label for="bottom_left">What is the piece in the bottom left?</label>
+<select id="bottom_left" name="bottom_left" form="state">
+  <option value="🔳">🔳joker</option>
+  <option value="🟥">🟥Red</option>
+  <option value="🟦">🟦Blue</option>
+  <option value="🟧">🟧Orange</option>
+  <option value="🟩">🟩Green</option>
+</select>
+<div>&emsp;</div>
+<label for="top_left">What is the piece in the top left?</label>
+<select id="top_left" name="top_left" form="state">
+  <option value="🔳">🔳joker</option>
+  <option value="🟥">🟥Red</option>
+  <option value="🟦">🟦Blue</option>
+  <option value="🟧">🟧Orange</option>
+  <option value="🟩">🟩Green</option>
+</select>
+<div>&emsp;</div>
 
-<form action="/target" id="state">
+<form action="/state" id="state">
   <input id="name" type="text" name="blank">
   <button>Go to next step</button>   
 </form>

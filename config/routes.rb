@@ -4,4 +4,5 @@ Rails.application.routes.draw do
 
   get("/target", { :controller => "application", :action => "target" })
 
+  get("/state", { :controller => "application", :action => "state" })
 end
