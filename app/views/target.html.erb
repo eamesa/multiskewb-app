@@ -1,0 +1,34 @@
+<h1>Target</h1>
+
+<%= "With the joker in the back, your target (clockwise from top right) is:
+  #{@gregs_target[1]} => #{@gregs_target[2]} => #{@gregs_target[3]} => #{@gregs_target[4]}." %>
+
+
+<div>&emsp;</div>
+<%= "............#{@gregs_target[0]} #{@gregs_target[0]}" %>
+<div>&emsp;</div>
+<%= "............#{@gregs_target[0]} #{@gregs_target[0]}" %>
+<div>&emsp;</div>
+<div>&emsp;</div>
+<%= "#{@gregs_target[4]} #{@gregs_target[4]}..............#{@gregs_target[1]} #{@gregs_target[1]}" %>
+<div>&emsp;</div>
+<%= "#{@gregs_target[4]} #{@gregs_target[4]}..............#{@gregs_target[1]} #{@gregs_target[1]}" %>
+
+<div>&emsp;</div>
+<%= "#{@gregs_target[3]} #{@gregs_target[3]}..............#{@gregs_target[2]} #{@gregs_target[2]}" %>
+<div>&emsp;</div>
+<%= "#{@gregs_target[3]} #{@gregs_target[3]}..............#{@gregs_target[2]} #{@gregs_target[2]}" %>
+
+<label for="back">What is the piece in the back?</label>
+<select id="back" name="back" form="state">
+  <option value="joker">🔳joker</option>
+  <option value="red">🟥Red</option>
+  <option value="blue">🟦Blue</option>
+  <option value="orange">🟧Orange</option>
+  <option value="green">🟩Green</option>
+</select>
+
+<form action="/target" id="state">
+  <input id="name" type="text" name="blank">
+  <button>Go to next step</button>   
+</form>
